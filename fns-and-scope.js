@@ -74,14 +74,18 @@ var name = 'Tyler';
 
   //Code Here
 
+  var myName = () => "Russell"
+
 
 
 //Now save the function definition of myName into a new variable called newMyName
 
   //Code Here
 
-//Now alert the result of invoking newMyName
+  var newMyName = myName();
 
+//Now alert the result of invoking newMyName
+// alert(newMyName);
 
 
 //////////////////PROBLEM 7////////////////////
@@ -92,8 +96,12 @@ var name = 'Tyler';
 
   //Code Here
 
+  var outerFn = () => () => "Russell"
+
 //Now save the result of invoking outerFn into a variable called innerFn.
 
   //Code Here
 
 //Now invoke innerFn.
+
+var innerFn = outerFn();
